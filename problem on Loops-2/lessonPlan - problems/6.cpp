@@ -1,0 +1,27 @@
+// Problem : Print a triangular Yattern as shown in the example below.For
+// Example for n=4
+
+//       *
+
+//     * * *
+
+//   * * * * *
+
+// * * * * * * *
+
+#include<iostream>
+using namespace std;
+int main()
+{
+   int n;
+   cin>>n;
+   for(int i = 1; i<=n; i++){
+        for(int j = 1; j<=(i+n-1); j++){
+            if(j<=(n-i))
+                cout<<" ";
+            else
+                cout<<"*";
+        }
+        cout<<endl;
+   }
+}
